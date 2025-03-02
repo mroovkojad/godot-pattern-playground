@@ -1,0 +1,13 @@
+[gd_resource type="Theme" load_steps=3 format=3 uid="uid://db6ng7ihfrcik"]
+
+[ext_resource type="FontFile" uid="uid://c7t0dju5sx0gq" path="res://assets/fonts/pixelOperator/PixelOperator8.ttf" id="1_qw6xb"]
+
+[sub_resource type="StyleBoxFlat" id="StyleBoxFlat_31sei"]
+bg_color = Color(0.0322, 0.23, 0.154177, 0.866667)
+
+[resource]
+resource_local_to_scene = true
+default_font = ExtResource("1_qw6xb")
+Button/fonts/font = ExtResource("1_qw6xb")
+Label/fonts/font = ExtResource("1_qw6xb")
+Panel/styles/panel = SubResource("StyleBoxFlat_31sei")

@@ -11,5 +11,6 @@ public partial class PurpleSlimeAIController : Controller
     public override void HandleMovement()
     {
         _moveLeftCommand.Execute(_character);
+        _jumpCommand.Execute(_character);
     }
 }
