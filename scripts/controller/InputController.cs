@@ -15,7 +15,6 @@ public partial class InputController : Controller
         if (direction.X < 0)
         {
             _moveLeftCommand.Execute(_character);
-            GD.Print($"Player Speed: {_character.Speed}");
         }
         else if (direction.X > 0)
         {

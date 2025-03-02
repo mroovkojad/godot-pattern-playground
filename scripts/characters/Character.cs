@@ -2,6 +2,8 @@ public abstract partial class Character : CharacterBody2D
 {
     public static float DefaultSpeed {get; protected set;} = 200.0f;
     public static float DefaultJumpVelocity {get; protected set;} = -300.0f;
+    protected virtual float GetClassDefaultSpeed() => DefaultSpeed;
+    protected virtual float GetDefaultJumpVelocity() => DefaultJumpVelocity;
 
     // Instance properties
     public virtual float Speed { get; protected set; }
@@ -13,8 +15,8 @@ public abstract partial class Character : CharacterBody2D
     public override void _Ready()
     {
         base._Ready();
-        Speed = DefaultSpeed;
-        JumpVelocity = DefaultJumpVelocity;
+        Speed = GetClassDefaultSpeed();
+        JumpVelocity = GetDefaultJumpVelocity();
         AnimatedSprite = GetNode<AnimatedSprite2D>("AnimatedSprite2D");
     }
     public override void _PhysicsProcess(double delta)
