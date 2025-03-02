@@ -5,7 +5,7 @@ public class JumpCommand : ICommand
         if (character.IsOnFloor())
         {
             Vector2 velocity = character.Velocity;
-            velocity.Y = Character.JumpVelocity;
+            velocity.Y = character.JumpVelocity;
             character.Velocity = velocity;
         }
     }

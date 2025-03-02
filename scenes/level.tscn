@@ -1,8 +1,9 @@
-[gd_scene load_steps=7 format=4 uid="uid://bp3pf2blf1aup"]
+[gd_scene load_steps=8 format=4 uid="uid://bp3pf2blf1aup"]
 
 [ext_resource type="PackedScene" uid="uid://brbxnb8ilyvet" path="res://scenes/player.tscn" id="1_8wcqd"]
 [ext_resource type="Texture2D" uid="uid://d0j10yrmuj4o7" path="res://assets/sprites/world_tileset.png" id="2_duqaq"]
 [ext_resource type="PackedScene" uid="uid://ddhtmgvunf6dr" path="res://scenes/purple_slime.tscn" id="3_45v1i"]
+[ext_resource type="PackedScene" uid="uid://dctikek6ck5mu" path="res://scenes/green_slime.tscn" id="4_0pypf"]
 
 [sub_resource type="WorldBoundaryShape2D" id="WorldBoundaryShape2D_21bsl"]
 
@@ -158,3 +159,6 @@ tile_set = SubResource("TileSet_ywode")
 
 [node name="PurpleSlime" parent="." instance=ExtResource("3_45v1i")]
 position = Vector2(136, 0)
+
+[node name="GreenSlime" parent="." instance=ExtResource("4_0pypf")]
+position = Vector2(-89, 0)

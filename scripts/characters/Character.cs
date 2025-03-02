@@ -1,9 +1,15 @@
 public abstract partial class Character : CharacterBody2D
 {
-    public const float Speed = 200.0f;
-    public const float JumpVelocity = -300.0f;
-
+    public float Speed { get; protected set; }
+    public float JumpVelocity { get; protected set; }
     protected Controller _controller;
+
+    protected Character()
+    {
+        // Set instance values from class defaults
+        Speed = 200.0f;
+        JumpVelocity = -300.0f;
+    }
 
     public override void _PhysicsProcess(double delta)
     {

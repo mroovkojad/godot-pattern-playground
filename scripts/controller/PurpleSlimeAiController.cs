@@ -1,11 +1,11 @@
 
 using System;
 
-public partial class SlimeAIController : Controller
+public partial class PurpleSlimeAIController : Controller
 {
     private Random _random;
 
-    public SlimeAIController(Character character): base(character){}
+    public PurpleSlimeAIController(Character character): base(character){}
 
 
     public override void HandleMovement()

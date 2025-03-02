@@ -5,7 +5,7 @@ public partial class InputController : Controller
     public override void HandleMovement()
     {
         // Handle jump input
-        if (Input.IsActionJustPressed("ui_accept"))
+        if (Input.IsActionJustPressed("ui_up"))
         {
             _jumpCommand.Execute(_character);
         }
