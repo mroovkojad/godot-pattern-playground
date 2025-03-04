@@ -1,4 +1,4 @@
-public class JumpCommand : ICommand
+public class JumpCommand : ICommand<Character>
 {
     public void Execute(Character character)
     {

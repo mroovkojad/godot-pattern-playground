@@ -1,7 +1,7 @@
-public class GetHitCommand : ICommand
+public class GetHitCommand : ICommand<Character>
 {
     public void Execute(Character character)
     {
-        
+
     }
 }

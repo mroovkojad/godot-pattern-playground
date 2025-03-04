@@ -1,4 +1,4 @@
-public interface ICommand
+public interface ICommand<T>
 {
-    void Execute(Character character);
+    void Execute(T target);
 }

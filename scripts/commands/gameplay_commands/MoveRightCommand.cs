@@ -1,9 +1,11 @@
-public class MoveLeftCommand : ICommand
+using System;
+
+public class MoveRightCommand : ICommand<Character>
 {
     public void Execute(Character character)
     {
         Vector2 velocity = character.Velocity;
-        velocity.X = -character.Speed;
+        velocity.X = character.Speed;
         character.Velocity = velocity;
     }
 }
