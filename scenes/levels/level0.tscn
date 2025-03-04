@@ -1,14 +1,14 @@
 [gd_scene load_steps=8 format=4 uid="uid://bp3pf2blf1aup"]
 
-[ext_resource type="PackedScene" uid="uid://brbxnb8ilyvet" path="res://scenes/player.tscn" id="1_8wcqd"]
-[ext_resource type="Texture2D" uid="uid://d0j10yrmuj4o7" path="res://assets/sprites/world_tileset.png" id="2_duqaq"]
-[ext_resource type="PackedScene" uid="uid://ddhtmgvunf6dr" path="res://scenes/purple_slime.tscn" id="3_45v1i"]
-[ext_resource type="PackedScene" uid="uid://dctikek6ck5mu" path="res://scenes/green_slime.tscn" id="4_0pypf"]
+[ext_resource type="PackedScene" uid="uid://brbxnb8ilyvet" path="res://scenes/player.tscn" id="1_kprlf"]
+[ext_resource type="Texture2D" uid="uid://d0j10yrmuj4o7" path="res://assets/sprites/world_tileset.png" id="2_7wyl3"]
+[ext_resource type="PackedScene" uid="uid://ddhtmgvunf6dr" path="res://scenes/purple_slime.tscn" id="3_s6co3"]
+[ext_resource type="PackedScene" uid="uid://dctikek6ck5mu" path="res://scenes/green_slime.tscn" id="4_5un0q"]
 
 [sub_resource type="WorldBoundaryShape2D" id="WorldBoundaryShape2D_21bsl"]
 
 [sub_resource type="TileSetAtlasSource" id="TileSetAtlasSource_tkg1t"]
-texture = ExtResource("2_duqaq")
+texture = ExtResource("2_7wyl3")
 0:0/0 = 0
 1:0/0 = 0
 2:0/0 = 0
@@ -147,7 +147,7 @@ sources/0 = SubResource("TileSetAtlasSource_tkg1t")
 [node name="CollisionShape2D2" type="CollisionShape2D" parent="StaticBody2D"]
 shape = SubResource("WorldBoundaryShape2D_21bsl")
 
-[node name="Player" parent="." instance=ExtResource("1_8wcqd")]
+[node name="Player" parent="." instance=ExtResource("1_kprlf")]
 position = Vector2(0, -1)
 
 [node name="Camera2D" type="Camera2D" parent="Player"]
@@ -157,8 +157,8 @@ zoom = Vector2(4, 4)
 tile_map_data = PackedByteArray("AAD7/wAAAAAAAAAAAAD8/wAAAAAAAAAAAAD9/wAAAAAAAAAAAAD+/wAAAAAAAAAAAAD//wAAAAAAAAAAAAAAAAAAAAAAAAAAAAABAAAAAAAAAAAAAAACAAAAAAAAAAAAAAADAAAAAAAAAAAAAAAEAAAAAAAAAAAAAAAFAAAAAAAAAAAAAAAGAAAAAAAAAAAAAAAHAAAAAAAAAAAAAAAIAAAAAAAAAAAAAAAJAAAAAAAAAAAAAAAKAAAAAAAAAAAAAAALAAAAAAAAAAAAAAAMAAAAAAAAAAAAAAANAAAAAAAAAAAAAAAOAAAAAAAAAAAAAAAPAAAAAAAAAAAAAAAQAAAAAAAAAAAAAAARAAAAAAAAAAAAAAASAAAAAAAAAAAAAAATAAAAAAAAAAAAAAAUAAAAAAAAAAAAAAD6/wAAAAAAAAAAAAD5/wAAAAAAAAAAAAD4/wAAAAAAAAAAAAD3/wAAAAAAAAAAAAD2/wAAAAAAAAAAAAD1/wAAAAAAAAAAAAD0/wAAAAAAAAAAAADz/wAAAAAAAAAAAADy/wAAAAAAAAAAAADx/wAAAAAAAAAAAADw/wAAAAAAAAAAAADv/wAAAAAAAAAAAADu/wAAAAAAAAAAAADt/wAAAAAAAAAAAADs/wAAAAAAAAAAAADr/wAAAAAAAAAAAADq/wAAAAAAAAAAAADp/wAAAAAAAAAAAADo/wAAAAAAAAAAAAA=")
 tile_set = SubResource("TileSet_ywode")
 
-[node name="PurpleSlime" parent="." instance=ExtResource("3_45v1i")]
+[node name="PurpleSlime" parent="." instance=ExtResource("3_s6co3")]
 position = Vector2(136, 0)
 
-[node name="GreenSlime" parent="." instance=ExtResource("4_0pypf")]
+[node name="GreenSlime" parent="." instance=ExtResource("4_5un0q")]
 position = Vector2(-89, 0)
