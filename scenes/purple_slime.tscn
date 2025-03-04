@@ -1,6 +1,6 @@
 [gd_scene load_steps=21 format=3 uid="uid://ddhtmgvunf6dr"]
 
-[ext_resource type="Texture2D" uid="uid://cvtrh8v70o5bk" path="res://assets/sprites/slime_purple.png" id="1_6nrkk"]
+[ext_resource type="Texture2D" uid="uid://cvtrh8v70o5bk" path="res://assets/sprites/characters/slime_purple.png" id="1_6nrkk"]
 [ext_resource type="Script" path="res://scripts/characters/PurpleSlime.cs" id="1_s0n8o"]
 
 [sub_resource type="AtlasTexture" id="AtlasTexture_07d6i"]
