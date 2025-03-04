@@ -1,9 +1,9 @@
 public abstract partial class Controller : Node2D
 {
-    protected readonly ICommand _moveLeftCommand;
-    protected readonly ICommand _moveRightCommand;
-    protected readonly ICommand _jumpCommand;
-    protected readonly ICommand _stopCommand;
+    protected readonly ICommand<Character> _moveLeftCommand;
+    protected readonly ICommand<Character> _moveRightCommand;
+    protected readonly ICommand<Character> _jumpCommand;
+    protected readonly ICommand<Character> _stopCommand;
     protected readonly Character _character;
 
     public Controller(Character character)
