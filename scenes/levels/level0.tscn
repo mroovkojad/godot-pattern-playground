@@ -1,9 +1,9 @@
 [gd_scene load_steps=8 format=4 uid="uid://bp3pf2blf1aup"]
 
-[ext_resource type="PackedScene" uid="uid://brbxnb8ilyvet" path="res://scenes/player.tscn" id="1_kprlf"]
+[ext_resource type="PackedScene" uid="uid://brbxnb8ilyvet" path="res://scenes/characters/player.tscn" id="1_kprlf"]
 [ext_resource type="Texture2D" uid="uid://d0j10yrmuj4o7" path="res://assets/sprites/world_tileset.png" id="2_7wyl3"]
-[ext_resource type="PackedScene" uid="uid://ddhtmgvunf6dr" path="res://scenes/purple_slime.tscn" id="3_s6co3"]
-[ext_resource type="PackedScene" uid="uid://dctikek6ck5mu" path="res://scenes/green_slime.tscn" id="4_5un0q"]
+[ext_resource type="PackedScene" uid="uid://ddhtmgvunf6dr" path="res://scenes/characters/purple_slime.tscn" id="3_s6co3"]
+[ext_resource type="PackedScene" uid="uid://dctikek6ck5mu" path="res://scenes/characters/green_slime.tscn" id="4_5un0q"]
 
 [sub_resource type="WorldBoundaryShape2D" id="WorldBoundaryShape2D_21bsl"]
 
