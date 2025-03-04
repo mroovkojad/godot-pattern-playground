@@ -2,16 +2,16 @@
 
 importer="texture"
 type="CompressedTexture2D"
-uid="uid://bhm0ycxmpmpxs"
-path="res://.godot/imported/slime_green.png-f6349164bf3a0f5189bb927b97af9c58.ctex"
+uid="uid://r7x1icbdc7kr"
+path="res://.godot/imported/yellow_tileset.png-b52b9045f6103cc56bbb36f87787049f.ctex"
 metadata={
 "vram_texture": false
 }
 
 [deps]
 
-source_file="res://assets/sprites/slime_green.png"
-dest_files=["res://.godot/imported/slime_green.png-f6349164bf3a0f5189bb927b97af9c58.ctex"]
+source_file="res://assets/sprites/tilesets/ground/yellow_tileset.png"
+dest_files=["res://.godot/imported/yellow_tileset.png-b52b9045f6103cc56bbb36f87787049f.ctex"]
 
 [params]
 
